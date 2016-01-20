@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   padding: 0;
 }
 
@@ -7,4 +6,20 @@ body {
   height: 100vh;
 }
 
+.bar {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  height: 15px;
+  width: 2px;
+  background-color: cadetblue;
+}
+
+#draw-area .bar:nth-child(even) {
+    transform: rotate(-45deg);
+}
+
+#draw-area .bar:nth-child(odd) {
+    transform: rotate(45deg);
+}
 
